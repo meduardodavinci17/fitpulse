@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FitPulse – GitHub Pages Anleitung</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,sans-serif; background:#0A0D14; color:#EFF3FF; padding:24px 16px 48px; max-width:600px; margin:0 auto; }
+  h1 { font-size:28px; font-weight:800; margin-bottom:4px; background:linear-gradient(135deg,#00E5A0,#7C6FFF); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+  .sub { color:#6B7799; font-size:14px; margin-bottom:28px; }
+  .step { background:#1A2135; border:1px solid rgba(255,255,255,0.07); border-radius:16px; padding:18px; margin-bottom:14px; }
+  .step-num { display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; border-radius:50%; background:#00E5A0; color:#000; font-weight:800; font-size:14px; margin-bottom:10px; }
+  .step h2 { font-size:16px; font-weight:700; margin-bottom:8px; color:#EFF3FF; }
+  .step p { font-size:14px; color:#9BA8C5; line-height:1.6; margin-bottom:8px; }
+  .step p:last-child { margin-bottom:0; }
+  .url-box { background:#161C28; border:1px solid rgba(0,229,160,0.3); border-radius:10px; padding:10px 14px; font-family:monospace; font-size:13px; color:#00E5A0; margin-top:8px; word-break:break-all; }
+  .tip { background:rgba(0,229,160,0.08); border-left:3px solid #00E5A0; border-radius:0 10px 10px 0; padding:10px 14px; font-size:13px; color:#9BA8C5; margin-top:10px; }
+  .files { background:#161C28; border-radius:10px; padding:12px 14px; font-family:monospace; font-size:13px; color:#EFF3FF; margin-top:8px; }
+  .files div { padding:3px 0; color:#6B7799; }
+  .files div span { color:#00E5A0; }
+  img.screenshot { width:100%; border-radius:10px; margin-top:8px; border:1px solid rgba(255,255,255,0.1); }
+  .badge { display:inline-block; background:rgba(0,229,160,0.15); color:#00E5A0; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; margin-left:8px; }
+  .warning { background:rgba(255,95,109,0.1); border:1px solid rgba(255,95,109,0.25); border-radius:10px; padding:10px 14px; font-size:13px; color:#FF5F6D; margin-top:8px; }
+</style>
+</head>
+<body>
+
+<h1>FitPulse auf iPhone</h1>
+<p class="sub">Kostenlos · Kein Mac · Kein App Store · 5 Minuten</p>
+
+<div class="step">
+  <div class="step-num">1</div>
+  <h2>GitHub Account erstellen</h2>
+  <p>Gehe auf <strong>github.com</strong> und erstelle einen kostenlosen Account.</p>
+  <div class="url-box">https://github.com/signup</div>
+  <div class="tip">💡 Deinen Benutzernamen gut wählen – er wird Teil deiner App-URL!</div>
+</div>
+
+<div class="step">
+  <div class="step-num">2</div>
+  <h2>Neues Repository erstellen</h2>
+  <p>Nach dem Login auf <strong>github.com</strong>:</p>
+  <p>➊ Oben rechts auf das <strong>+</strong> klicken → <strong>New repository</strong></p>
+  <p>➋ Name eingeben: <strong>fitpulse</strong></p>
+  <p>➌ <strong>Public</strong> auswählen (wichtig!)</p>
+  <p>➍ Auf <strong>Create repository</strong> klicken</p>
+</div>
+
+<div class="step">
+  <div class="step-num">3</div>
+  <h2>Dateien hochladen <span class="badge">4 Dateien</span></h2>
+  <p>Im neuen Repository auf <strong>"uploading an existing file"</strong> klicken, dann alle 4 Dateien aus dem ZIP hochladen:</p>
+  <div class="files">
+    <div><span>index.html</span> &nbsp;← Die App selbst</div>
+    <div><span>manifest.json</span> &nbsp;← PWA-Einstellungen</div>
+    <div><span>sw.js</span> &nbsp;← Offline-Support</div>
+    <div><span>icon-192.png</span> &nbsp;← App-Icon</div>
+    <div><span>icon-512.png</span> &nbsp;← App-Icon groß</div>
+  </div>
+  <p style="margin-top:10px;">Dann unten auf <strong>Commit changes</strong> klicken.</p>
+</div>
+
+<div class="step">
+  <div class="step-num">4</div>
+  <h2>GitHub Pages aktivieren</h2>
+  <p>Im Repository oben auf <strong>Settings</strong> klicken:</p>
+  <p>➊ Links im Menü: <strong>Pages</strong> auswählen</p>
+  <p>➋ Unter <strong>Source</strong>: <strong>Deploy from a branch</strong></p>
+  <p>➌ Branch: <strong>main</strong> · Ordner: <strong>/ (root)</strong></p>
+  <p>➍ Auf <strong>Save</strong> klicken</p>
+  <div class="tip">⏳ GitHub braucht 1–2 Minuten zum Erstellen. Dann erscheint deine URL!</div>
+</div>
+
+<div class="step">
+  <div class="step-num">5</div>
+  <h2>App-URL aufrufen</h2>
+  <p>Deine App ist jetzt erreichbar unter:</p>
+  <div class="url-box">https://DEIN-USERNAME.github.io/fitpulse</div>
+  <p style="margin-top:10px;">Ersetze <strong>DEIN-USERNAME</strong> mit deinem GitHub Benutzernamen.</p>
+</div>
+
+<div class="step">
+  <div class="step-num">6</div>
+  <h2>Zum iPhone Home-Bildschirm hinzufügen 📱</h2>
+  <p>Die URL in <strong>Safari</strong> (nicht Chrome!) öffnen:</p>
+  <p>➊ Unten auf das <strong>Teilen-Symbol</strong> tippen (Viereck mit Pfeil)</p>
+  <p>➋ Runterscrollen → <strong>"Zum Home-Bildschirm"</strong> tippen</p>
+  <p>➌ Name bestätigen → <strong>Hinzufügen</strong></p>
+  <p style="margin-top:8px;">🎉 FitPulse erscheint jetzt als App-Icon auf deinem iPhone!</p>
+  <div class="warning">⚠️ Unbedingt Safari verwenden – Chrome unterstützt "Zum Home-Bildschirm" nicht auf iOS!</div>
+</div>
+
+<div class="step" style="border-color:rgba(0,229,160,0.25);background:rgba(0,229,160,0.05);">
+  <div class="step-num" style="background:#7C6FFF;">✓</div>
+  <h2>Fertig! Was funktioniert:</h2>
+  <p>✅ Läuft wie eine native App (kein Browser sichtbar)</p>
+  <p>✅ Funktioniert offline (Service Worker)</p>
+  <p>✅ GPS-Tracking beim Radfahren</p>
+  <p>✅ Bewegungssensor für Schritte</p>
+  <p>✅ Alle Trainings startbar mit Timer</p>
+  <p>✅ Streak & Daten werden gespeichert</p>
+  <p>✅ Kostenlos für immer</p>
+</div>
+
+</body>
+</html>
